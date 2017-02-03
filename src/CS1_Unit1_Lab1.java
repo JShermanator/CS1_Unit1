@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import static java.lang.Math.sqrt;
 /*
 Code Written and Compiled by Justin Sherman
  */
@@ -163,6 +162,7 @@ class Lab4{
      }
 }
 
+
 class Lab5{
      public static void main(String args[]){
 
@@ -191,8 +191,26 @@ class Lab5{
          System.out.println();
          System.out.print("Square:      "); System.out.printf("%5.2f", num1 * num1);
          System.out.println();
-         System.out.print("Square Root: "); System.out.printf("%5.2f", sqrt(num1));
+         System.out.print("Square Root: "); System.out.printf("%5.2f", Math.sqrt(num1));
+         System.out.println();
+         System.out.print("Random:      "); System.out.printf("%5.2f", Math.random()* num2);
+         System.out.println();
 
+         //If/Else Statement
+         if (num1 > num2){
+             System.out.print("Minimum:     "); System.out.printf("%5.2f", num2);
+             System.out.println();
+             System.out.print("Maximum:     "); System.out.printf("%5.2f", num1);
+         }
+         if (num2 > num1){
+             System.out.print("Minimum:     "); System.out.printf("%5.2f", num1);
+             System.out.println();
+             System.out.print("Maximum:     "); System.out.printf("%5.2f", num2);
+         }
+         System.out.println();
+
+         //Continue output
+         System.out.print("Abs Value:   "); System.out.printf("%5.2f", Math.abs(num1));
 
      }
 }

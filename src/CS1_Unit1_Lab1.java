@@ -132,7 +132,6 @@ class Lab3{
     }
 }
 
-
 class Lab4{
      public static void main(String args[]){
 
@@ -161,7 +160,6 @@ class Lab4{
 
      }
 }
-
 
 class Lab5{
      public static void main(String args[]){
@@ -213,4 +211,84 @@ class Lab5{
          System.out.print("Abs Value:   "); System.out.printf("%5.2f", Math.abs(num1));
 
      }
+}
+
+class Lab6{
+    public static void main(String args[]){
+        //declaring
+        int q1;
+        int q2;
+        int q3;
+        int q4;
+        Scanner in = new Scanner(System.in);
+
+        //q1 in and out
+        System.out.println("You are stuck in a mysterious room. There is a bookshelf, a big switch, and a door. Do you...");
+        System.out.println("1: Take out a Book");
+        System.out.println("2: Pull down the switch");
+        System.out.println("3: Open the door");
+
+        q1 = in.nextInt();
+
+        if (q1 == 1) {
+            //q2 input and output
+            System.out.println("The floor falls between your feet, you hear a heavy panting behind you, do you... ");
+            System.out.println("1: Run");
+            System.out.println("2: Fight");
+            System.out.println("3: Hide");
+
+            q2 = in.nextInt();
+
+            if (q2 == 2) {
+                //q3 input and output
+                System.out.println("You turn around, face the beast, and prep yourself for a hell of a fight, do you...");
+                System.out.println("1: Use the Wushi Finger Hold");
+                System.out.println("2: DropKick his ass");
+
+                q3 = in.nextInt();
+
+                if (q3 == 1) {
+                    //q4 input and output
+                    System.out.println("SKADOOSH!!!");
+                    System.out.println("The beast is down, and a genie or something appears, he asks you a riddle.");
+                    System.out.println("What has four fingers, and a thumb, but is not living?");
+                    System.out.println("1: A Cat");
+                    System.out.println("2: A Chicken");
+                    System.out.println("3: Run up and punch him in the face for trying to make you riddle.");
+
+                    q4 = in.nextInt();
+
+                    if (q4 == 3) {
+                        System.out.println("That magical thing is knocked out by your sheer awesomeness as you strike him");
+                        System.out.println("across the face screaming 'My Fist!!!'. He falls to the ground and the ");
+                        System.out.println("room dissolves around you. You hop in your new prize1 Lambo and get home.");
+                        System.out.println();
+                        System.out.println("YOU WIN!!!");
+
+                    } else {
+                        System.out.println("That magic guy screams 'WRONG ANSWER' and zaps you with lightning.");
+                        System.out.println("You are Dead.");
+                    }
+
+                } else {
+                    System.out.println("Even though your DropKick was amazing, withstood the blow and hits you");
+                    System.out.println("with one clean blow.");
+                    System.out.println("You are Dead.");
+                }
+
+            } else {
+                System.out.println("The Mysterious Beast Caught you.");
+                System.out.println("You are Dead.");
+            }
+        }
+        if (q1 == 2){
+            System.out.println("You hear the click of the switch, and the rooms explodes into a thousand pieces.");
+            System.out.println("You are Dead.");
+           }
+        if (q1 == 3){
+            System.out.println("As you twist the doorknob, you hear a click, and the rooms explodes into a thousand pieces.");
+            System.out.println("You are Dead.");
+
+        }
+    }
 }
